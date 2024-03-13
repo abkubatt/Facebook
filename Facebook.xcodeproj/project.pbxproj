@@ -11,6 +11,8 @@
 		A52239592BA1A1240021A67B /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52239582BA1A1240021A67B /* ContentView.swift */; };
 		A522395B2BA1A1250021A67B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A522395A2BA1A1250021A67B /* Assets.xcassets */; };
 		A522395E2BA1A1250021A67B /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A522395D2BA1A1250021A67B /* Preview Assets.xcassets */; };
+		A52239752BA1A20E0021A67B /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52239742BA1A20E0021A67B /* MainTabView.swift */; };
+		A52239772BA1A2710021A67B /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A52239762BA1A2710021A67B /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		A52239582BA1A1240021A67B /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		A522395A2BA1A1250021A67B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A522395D2BA1A1250021A67B /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		A52239742BA1A20E0021A67B /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		A52239762BA1A2710021A67B /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,12 @@
 		A52239552BA1A1240021A67B /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
-				A52239562BA1A1240021A67B /* FacebookApp.swift */,
+				A52239682BA1A1590021A67B /* App */,
+				A52239672BA1A1580021A67B /* Core */,
+				A52239662BA1A1570021A67B /* Model */,
+				A52239652BA1A1560021A67B /* Service */,
+				A52239642BA1A1550021A67B /* Utils */,
 				A52239582BA1A1240021A67B /* ContentView.swift */,
-				A522395A2BA1A1250021A67B /* Assets.xcassets */,
 				A522395C2BA1A1250021A67B /* Preview Content */,
 			);
 			path = Facebook;
@@ -65,6 +72,133 @@
 				A522395D2BA1A1250021A67B /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		A52239642BA1A1550021A67B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A522395A2BA1A1250021A67B /* Assets.xcassets */,
+				A52239762BA1A2710021A67B /* Launch Screen.storyboard */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A52239652BA1A1560021A67B /* Service */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		A52239662BA1A1570021A67B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A52239672BA1A1580021A67B /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				A52239722BA1A1990021A67B /* Auth */,
+				A52239712BA1A1980021A67B /* Components */,
+				A52239702BA1A1970021A67B /* CreatePost */,
+				A522396F2BA1A1960021A67B /* Feed */,
+				A522396E2BA1A1940021A67B /* Friends */,
+				A522396D2BA1A1930021A67B /* Marketplace */,
+				A522396C2BA1A1920021A67B /* Menu */,
+				A522396B2BA1A1910021A67B /* Profile */,
+				A522396A2BA1A1900021A67B /* Root */,
+				A52239692BA1A18F0021A67B /* Video */,
+				A52239732BA1A1E40021A67B /* TabBar */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		A52239682BA1A1590021A67B /* App */ = {
+			isa = PBXGroup;
+			children = (
+				A52239562BA1A1240021A67B /* FacebookApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		A52239692BA1A18F0021A67B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Video;
+			sourceTree = "<group>";
+		};
+		A522396A2BA1A1900021A67B /* Root */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Root;
+			sourceTree = "<group>";
+		};
+		A522396B2BA1A1910021A67B /* Profile */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Profile;
+			sourceTree = "<group>";
+		};
+		A522396C2BA1A1920021A67B /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		A522396D2BA1A1930021A67B /* Marketplace */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Marketplace;
+			sourceTree = "<group>";
+		};
+		A522396E2BA1A1940021A67B /* Friends */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Friends;
+			sourceTree = "<group>";
+		};
+		A522396F2BA1A1960021A67B /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		A52239702BA1A1970021A67B /* CreatePost */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CreatePost;
+			sourceTree = "<group>";
+		};
+		A52239712BA1A1980021A67B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A52239722BA1A1990021A67B /* Auth */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Auth;
+			sourceTree = "<group>";
+		};
+		A52239732BA1A1E40021A67B /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				A52239742BA1A20E0021A67B /* MainTabView.swift */,
+			);
+			path = TabBar;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +259,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A52239772BA1A2710021A67B /* Launch Screen.storyboard in Resources */,
 				A522395E2BA1A1250021A67B /* Preview Assets.xcassets in Resources */,
 				A522395B2BA1A1250021A67B /* Assets.xcassets in Resources */,
 			);
@@ -139,6 +274,7 @@
 			files = (
 				A52239592BA1A1240021A67B /* ContentView.swift in Sources */,
 				A52239572BA1A1240021A67B /* FacebookApp.swift in Sources */,
+				A52239752BA1A20E0021A67B /* MainTabView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +414,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -307,6 +444,7 @@
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = "Launch Screen.storyboard";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
