@@ -9,7 +9,17 @@ import SwiftUI
 
 struct StoryFeedView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView(.horizontal) {
+            HStack {
+                MyStoryCardView()
+                ForEach(0 ..< 10) { _ in
+                    StoryCardView()
+                }
+            }
+        }
+        .scrollIndicators(.hidden)
+        .padding(.top, 5)
+        .padding(.bottom, 5)
     }
 }
 

@@ -46,7 +46,7 @@ struct FeedHeaderView: View {
                 .foregroundStyle(.green)
         }
         .padding(.horizontal)
-        .padding(.vertical, 30)
+        .padding(.vertical, 20)
     }
 }
 

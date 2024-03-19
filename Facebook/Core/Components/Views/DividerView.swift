@@ -8,11 +8,15 @@
 import SwiftUI
 
 struct DividerView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    private var width: CGFloat
 
-#Preview {
-    DividerView()
+    init(width: CGFloat) {
+        self.width = width
+    }
+
+    var body: some View {
+        Rectangle()
+            .foregroundStyle(Color(.systemGray6))
+            .frame(width: width, height: 6)
+    }
 }
