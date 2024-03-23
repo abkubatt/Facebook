@@ -1,0 +1,18 @@
+//
+//  ProfileHeaderView.swift
+//  Facebook
+//
+//  Created by Abdulmajit Kubatbekov on 23/3/24.
+//
+
+import SwiftUI
+
+struct ProfileHeaderView: View {
+    var body: some View {
+        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    }
+}
+
+#Preview {
+    ProfileHeaderView()
+}
