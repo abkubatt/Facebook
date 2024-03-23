@@ -19,8 +19,8 @@ struct FeedView: View {
                         DividerView(width: proxy.size.width)
                         ForEach(0 ..< 10) { _ in
                             PostView()
+                            DividerView(width: proxy.size.width - 15)
                         }
-                        DividerView(width: proxy.size.width - 15)
                         Spacer()
                     }
                     .toolbar {

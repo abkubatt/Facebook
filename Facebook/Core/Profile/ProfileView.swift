@@ -8,8 +8,39 @@
 import SwiftUI
 
 struct ProfileView: View {
+    @Environment(\.dismiss) private var dismiss
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        GeometryReader { proxy in
+            ScrollView {
+                VStack {
+                    ProfileHeaderView(width: proxy.size.width)
+                    DividerView(width: proxy.size.width)
+                }
+            }
+            .navigationBarTitleDisplayMode(.inline)
+            .navigationTitle("Abdulmajit Kubatbekov")
+            .toolbar {
+                ToolbarItem(placement: .topBarLeading) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "arrow.left")
+                            .foregroundStyle(.black)
+                            .fontWeight(.bold)
+                    }
+                }
+                ToolbarItem(placement: .topBarTrailing) {
+                    Button {
+                        dismiss()
+                    } label: {
+                        Image(systemName: "magnifyingglass")
+                            .foregroundStyle(.black)
+                            .fontWeight(.bold)
+                    }
+                }
+            }
+        }
     }
 }
 

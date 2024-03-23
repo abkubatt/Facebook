@@ -12,6 +12,7 @@ struct FeedHeaderView: View {
         HStack {
             NavigationLink {
                 ProfileView()
+                    .navigationBarBackButtonHidden()
             } label: {
                 Image("profilePic")
                     .resizable()
