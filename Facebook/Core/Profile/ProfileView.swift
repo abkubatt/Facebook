@@ -19,6 +19,10 @@ struct ProfileView: View {
                     ProfileOptionsView()
                     ProfileFriendsView(width: proxy.size.width)
                     DividerView(width: proxy.size.width)
+                    ManagerProfilePostsView(width: proxy.size.width)
+                    ForEach(0 ..< 4) { _ in
+                        PostView()
+                    }
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

@@ -8,11 +8,29 @@
 import SwiftUI
 
 struct ReelResuableView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
+    private var image: String
+    private var title: String
 
-#Preview {
-    ReelResuableView()
+    init(image: String, title: String) {
+        self.image = image
+        self.title = title
+    }
+
+    var body: some View {
+        HStack(spacing: 10) {
+            Image(systemName: image)
+                .resizable()
+                .scaledToFill()
+                .frame(width: 16, height: 16)
+                .foregroundStyle(.red)
+            Text(title)
+                .font(.headline)
+                .fontWeight(.semibold)
+                .foregroundStyle(Color(.darkGray))
+        }
+        .padding(.horizontal, 25)
+        .padding(.vertical, 8)
+        .background(.white)
+        .clipShape(RoundedRectangle(cornerRadius: 30))
+    }
 }
