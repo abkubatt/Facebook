@@ -8,11 +8,17 @@
 import SwiftUI
 
 struct TagView: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    private var title: String
+    init(title: String) {
+        self.title = title
     }
-}
 
-#Preview {
-    TagView()
+    var body: some View {
+        Text(title)
+            .font(.subheadline)
+            .padding(.horizontal)
+            .padding(.vertical, 8)
+            .background(Color(.systemGray5))
+            .clipShape(RoundedRectangle(cornerRadius: 30))
+    }
 }
