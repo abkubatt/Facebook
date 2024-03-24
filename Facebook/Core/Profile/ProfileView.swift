@@ -16,6 +16,9 @@ struct ProfileView: View {
                 VStack {
                     ProfileHeaderView(width: proxy.size.width)
                     DividerView(width: proxy.size.width)
+                    ProfileOptionsView()
+                    ProfileFriendsView(width: proxy.size.width)
+                    DividerView(width: proxy.size.width)
                 }
             }
             .navigationBarTitleDisplayMode(.inline)

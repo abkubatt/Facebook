@@ -23,6 +23,8 @@
 		A5C24D892BA4CC1B007287B8 /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D882BA4CC1B007287B8 /* FeedHeaderView.swift */; };
 		A5C24D8B2BA4CC37007287B8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D8A2BA4CC37007287B8 /* ProfileView.swift */; };
 		A5C411862BA9EC7200F88479 /* StoryCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C411852BA9EC7200F88479 /* StoryCardView.swift */; };
+		A5CE41ED2BB085C6000DED67 /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CE41EC2BB085C6000DED67 /* ProfileOptionsView.swift */; };
+		A5CE41EF2BB08CED000DED67 /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CE41EE2BB08CED000DED67 /* ProfileFriendsView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +45,8 @@
 		A5C24D882BA4CC1B007287B8 /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
 		A5C24D8A2BA4CC37007287B8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
 		A5C411852BA9EC7200F88479 /* StoryCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryCardView.swift; sourceTree = "<group>"; };
+		A5CE41EC2BB085C6000DED67 /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
+		A5CE41EE2BB08CED000DED67 /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +166,8 @@
 			children = (
 				A5C24D8A2BA4CC37007287B8 /* ProfileView.swift */,
 				A503C1092BAF38C3001D8F5F /* ProfileHeaderView.swift */,
+				A5CE41EC2BB085C6000DED67 /* ProfileOptionsView.swift */,
+				A5CE41EE2BB08CED000DED67 /* ProfileFriendsView.swift */,
 			);
 			path = Profile;
 			sourceTree = "<group>";
@@ -311,6 +317,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A503C10C2BAF3C6C001D8F5F /* CustomButton.swift in Sources */,
+				A5CE41ED2BB085C6000DED67 /* ProfileOptionsView.swift in Sources */,
 				A5C24D872BA4CBE7007287B8 /* FeedView.swift in Sources */,
 				A52239592BA1A1240021A67B /* ContentView.swift in Sources */,
 				A52239572BA1A1240021A67B /* FacebookApp.swift in Sources */,
@@ -318,6 +325,7 @@
 				A56781512BA9EFC5006EE173 /* DividerView.swift in Sources */,
 				A567814E2BA9EE72006EE173 /* MyStoryCardView.swift in Sources */,
 				A5C24D8B2BA4CC37007287B8 /* ProfileView.swift in Sources */,
+				A5CE41EF2BB08CED000DED67 /* ProfileFriendsView.swift in Sources */,
 				A503C10A2BAF38C3001D8F5F /* ProfileHeaderView.swift in Sources */,
 				A52239752BA1A20E0021A67B /* MainTabView.swift in Sources */,
 				A567814C2BA9EDCA006EE173 /* StoryFeedView.swift in Sources */,
