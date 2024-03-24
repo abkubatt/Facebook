@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct FeedHeaderView: View {
+    @State private var showCreatePost = false
     var body: some View {
         HStack {
             NavigationLink {
@@ -22,7 +23,7 @@ struct FeedHeaderView: View {
             }
             
             Button {
-                
+                showCreatePost.toggle()
             } label: {
                 HStack {
                     Text("What's on your main?")
@@ -48,6 +49,9 @@ struct FeedHeaderView: View {
         }
         .padding(.horizontal)
         .padding(.vertical, 20)
+        .fullScreenCover(isPresented: $showCreatePost, content: {
+            CreatePostView()
+        })
     }
 }
 

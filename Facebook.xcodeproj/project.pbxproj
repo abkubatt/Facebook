@@ -27,6 +27,8 @@
 		A5CE41EF2BB08CED000DED67 /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CE41EE2BB08CED000DED67 /* ProfileFriendsView.swift */; };
 		A5F18E852BB0A5CC00A3138D /* ReelResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F18E842BB0A5CC00A3138D /* ReelResuableView.swift */; };
 		A5F18E872BB0A68D00A3138D /* ManagerProfilePostsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F18E862BB0A68D00A3138D /* ManagerProfilePostsView.swift */; };
+		A5F18E892BB0B32200A3138D /* CreatePostView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F18E882BB0B32200A3138D /* CreatePostView.swift */; };
+		A5F18E8B2BB0B3E400A3138D /* ChoiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F18E8A2BB0B3E400A3138D /* ChoiceView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -51,6 +53,8 @@
 		A5CE41EE2BB08CED000DED67 /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
 		A5F18E842BB0A5CC00A3138D /* ReelResuableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelResuableView.swift; sourceTree = "<group>"; };
 		A5F18E862BB0A68D00A3138D /* ManagerProfilePostsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ManagerProfilePostsView.swift; sourceTree = "<group>"; };
+		A5F18E882BB0B32200A3138D /* CreatePostView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePostView.swift; sourceTree = "<group>"; };
+		A5F18E8A2BB0B3E400A3138D /* ChoiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -214,6 +218,8 @@
 		A52239702BA1A1970021A67B /* CreatePost */ = {
 			isa = PBXGroup;
 			children = (
+				A5F18E882BB0B32200A3138D /* CreatePostView.swift */,
+				A5F18E8A2BB0B3E400A3138D /* ChoiceView.swift */,
 			);
 			path = CreatePost;
 			sourceTree = "<group>";
@@ -328,6 +334,7 @@
 				A5C24D872BA4CBE7007287B8 /* FeedView.swift in Sources */,
 				A52239592BA1A1240021A67B /* ContentView.swift in Sources */,
 				A52239572BA1A1240021A67B /* FacebookApp.swift in Sources */,
+				A5F18E8B2BB0B3E400A3138D /* ChoiceView.swift in Sources */,
 				A5C24D892BA4CC1B007287B8 /* FeedHeaderView.swift in Sources */,
 				A56781512BA9EFC5006EE173 /* DividerView.swift in Sources */,
 				A5F18E852BB0A5CC00A3138D /* ReelResuableView.swift in Sources */,
@@ -336,6 +343,7 @@
 				A5CE41EF2BB08CED000DED67 /* ProfileFriendsView.swift in Sources */,
 				A503C10A2BAF38C3001D8F5F /* ProfileHeaderView.swift in Sources */,
 				A52239752BA1A20E0021A67B /* MainTabView.swift in Sources */,
+				A5F18E892BB0B32200A3138D /* CreatePostView.swift in Sources */,
 				A567814C2BA9EDCA006EE173 /* StoryFeedView.swift in Sources */,
 				A5C411862BA9EC7200F88479 /* StoryCardView.swift in Sources */,
 				A5A37C422BAC9C7400188A31 /* PostView.swift in Sources */,
