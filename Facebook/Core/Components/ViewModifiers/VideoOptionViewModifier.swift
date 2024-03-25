@@ -19,5 +19,7 @@ struct VideoOptionViewModifier: ViewModifier {
 
 extension View {
     
-    func view
+    func videoOptionViewModifier() -> some View {
+        modifier(VideoOptionViewModifier())
+    }
 }

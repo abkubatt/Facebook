@@ -21,7 +21,7 @@ struct MainTabView: View {
                     tabSelection = 0
                 }
             
-            Text("Video")
+            VideoView()
                 .tabItem {
                     Image(systemName: "play.tv")
                         .environment(\.symbolVariants, tabSelection == 1 ? .fill : .none)

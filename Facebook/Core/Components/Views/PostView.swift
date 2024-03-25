@@ -6,8 +6,11 @@
 //
 
 import SwiftUI
+import AVKit
 
 struct PostView: View {
+    var isVideo: Bool
+
     var body: some View {
         VStack(alignment: .leading) {
             HStack {
@@ -41,9 +44,17 @@ struct PostView: View {
             .padding(.horizontal)
             Text("Time to party with team")
                 .padding(.horizontal)
-            Image("office")
-                .resizable()
-                .scaledToFill()
+            if !isVideo {
+                Image("office")
+                    .resizable()
+                    .scaledToFill()
+            } else {
+                if let url =
+                URL(string: "http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4"){
+                    VideoPlayer(player: AVPlayer(url: url))
+                        .frame(height: 400)
+                }
+            }
             
             HStack(spacing: 3) {
                 Image("like")
@@ -98,5 +109,5 @@ struct PostView: View {
 }
 
 #Preview {
-    PostView()
+    PostView(isVideo: false)
 }

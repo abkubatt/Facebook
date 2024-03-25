@@ -21,7 +21,7 @@ struct ProfileView: View {
                     DividerView(width: proxy.size.width)
                     ManagerProfilePostsView(width: proxy.size.width)
                     ForEach(0 ..< 4) { _ in
-                        PostView()
+                        PostView(isVideo: false)
                     }
                 }
             }

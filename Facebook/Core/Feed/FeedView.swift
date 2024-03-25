@@ -18,7 +18,7 @@ struct FeedView: View {
                         StoryFeedView()
                         DividerView(width: proxy.size.width)
                         ForEach(0 ..< 10) { _ in
-                            PostView()
+                            PostView(isVideo: false)
                             DividerView(width: proxy.size.width - 15)
                         }
                         Spacer()

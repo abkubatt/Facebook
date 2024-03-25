@@ -24,6 +24,9 @@
 		A5A89D732BB16CD800AA4972 /* ShortCutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D722BB16CD800AA4972 /* ShortCutsView.swift */; };
 		A5A89D752BB1720C00AA4972 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D742BB1720C00AA4972 /* MenuCell.swift */; };
 		A5A89D782BB1743F00AA4972 /* CustomButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D772BB1743F00AA4972 /* CustomButtonModifier.swift */; };
+		A5A89D7C2BB17AD400AA4972 /* VideoOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D7B2BB17AD400AA4972 /* VideoOptionsView.swift */; };
+		A5A89D7E2BB17B9800AA4972 /* VideoOptionViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D7D2BB17B9800AA4972 /* VideoOptionViewModifier.swift */; };
+		A5A89D802BB17C9C00AA4972 /* VideoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D7F2BB17C9C00AA4972 /* VideoView.swift */; };
 		A5C24D872BA4CBE7007287B8 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D862BA4CBE7007287B8 /* FeedView.swift */; };
 		A5C24D892BA4CC1B007287B8 /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D882BA4CC1B007287B8 /* FeedHeaderView.swift */; };
 		A5C24D8B2BA4CC37007287B8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D8A2BA4CC37007287B8 /* ProfileView.swift */; };
@@ -60,6 +63,10 @@
 		A5A89D722BB16CD800AA4972 /* ShortCutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutsView.swift; sourceTree = "<group>"; };
 		A5A89D742BB1720C00AA4972 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
 		A5A89D772BB1743F00AA4972 /* CustomButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonModifier.swift; sourceTree = "<group>"; };
+		A5A89D792BB179D800AA4972 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		A5A89D7B2BB17AD400AA4972 /* VideoOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOptionsView.swift; sourceTree = "<group>"; };
+		A5A89D7D2BB17B9800AA4972 /* VideoOptionViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoOptionViewModifier.swift; sourceTree = "<group>"; };
+		A5A89D7F2BB17C9C00AA4972 /* VideoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoView.swift; sourceTree = "<group>"; };
 		A5C24D862BA4CBE7007287B8 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A5C24D882BA4CC1B007287B8 /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
 		A5C24D8A2BA4CC37007287B8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -107,6 +114,7 @@
 		A52239552BA1A1240021A67B /* Facebook */ = {
 			isa = PBXGroup;
 			children = (
+				A5A89D792BB179D800AA4972 /* Info.plist */,
 				A52239682BA1A1590021A67B /* App */,
 				A52239672BA1A1580021A67B /* Core */,
 				A52239662BA1A1570021A67B /* Model */,
@@ -177,6 +185,7 @@
 		A52239692BA1A18F0021A67B /* Video */ = {
 			isa = PBXGroup;
 			children = (
+				A5A89D7A2BB17AC400AA4972 /* View */,
 			);
 			path = Video;
 			sourceTree = "<group>";
@@ -297,8 +306,18 @@
 			isa = PBXGroup;
 			children = (
 				A5A89D772BB1743F00AA4972 /* CustomButtonModifier.swift */,
+				A5A89D7D2BB17B9800AA4972 /* VideoOptionViewModifier.swift */,
 			);
 			path = ViewModifiers;
+			sourceTree = "<group>";
+		};
+		A5A89D7A2BB17AC400AA4972 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5A89D7B2BB17AD400AA4972 /* VideoOptionsView.swift */,
+				A5A89D7F2BB17C9C00AA4972 /* VideoView.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 		A5F18E8C2BB0C45100A3138D /* View */ = {
@@ -393,12 +412,14 @@
 				A503C10C2BAF3C6C001D8F5F /* CustomButton.swift in Sources */,
 				A5F18E872BB0A68D00A3138D /* ManagerProfilePostsView.swift in Sources */,
 				A5CE41ED2BB085C6000DED67 /* ProfileOptionsView.swift in Sources */,
+				A5A89D7C2BB17AD400AA4972 /* VideoOptionsView.swift in Sources */,
 				A5C24D872BA4CBE7007287B8 /* FeedView.swift in Sources */,
 				A52239592BA1A1240021A67B /* ContentView.swift in Sources */,
 				A52239572BA1A1240021A67B /* FacebookApp.swift in Sources */,
 				A5F18E8B2BB0B3E400A3138D /* ChoiceView.swift in Sources */,
 				A5F18E902BB0C4EC00A3138D /* FriendCell.swift in Sources */,
 				A5F18E922BB0C5B800A3138D /* FriendsView.swift in Sources */,
+				A5A89D7E2BB17B9800AA4972 /* VideoOptionViewModifier.swift in Sources */,
 				A5C24D892BA4CC1B007287B8 /* FeedHeaderView.swift in Sources */,
 				A5A89D6F2BB16AC500AA4972 /* MenuView.swift in Sources */,
 				A56781512BA9EFC5006EE173 /* DividerView.swift in Sources */,
@@ -416,6 +437,7 @@
 				A5A89D712BB16BBC00AA4972 /* MenuHeaderView.swift in Sources */,
 				A52239752BA1A20E0021A67B /* MainTabView.swift in Sources */,
 				A5F18E892BB0B32200A3138D /* CreatePostView.swift in Sources */,
+				A5A89D802BB17C9C00AA4972 /* VideoView.swift in Sources */,
 				A567814C2BA9EDCA006EE173 /* StoryFeedView.swift in Sources */,
 				A5C411862BA9EC7200F88479 /* StoryCardView.swift in Sources */,
 				A5A37C422BAC9C7400188A31 /* PostView.swift in Sources */,
@@ -555,6 +577,8 @@
 				DEVELOPMENT_TEAM = DHN2697SML;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facebook/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -585,6 +609,8 @@
 				DEVELOPMENT_TEAM = DHN2697SML;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = Facebook/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
