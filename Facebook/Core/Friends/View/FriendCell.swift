@@ -8,16 +8,24 @@
 import SwiftUI
 
 struct FriendCell: View {
+    private var viewModel: FriendsViewModel
+    private var index: Int
+    
+    init(viewModel: FriendsViewModel, index: Int) {
+        self.viewModel = viewModel
+        self.index = index
+    }
+
     var body: some View {
         HStack(alignment: .top) {
-            Image("profilePic3")
+            Image(viewModel.friendsRequests[index].profilelmageName ?? "")
                 .resizable()
                 .scaledToFill()
                 .frame(width: 70, height: 70)
                 .clipShape(Circle())
             
             VStack(alignment: .leading) {
-                Text("Abdulmajit Kubatbekov")
+                Text(viewModel.friendsRequests[index].firstName + " " + viewModel.friendsRequests[index].familyName)
                     .font(.headline)
                     .fontWeight(.semibold)
                 
@@ -46,8 +54,4 @@ struct FriendCell: View {
         }
         .padding(.horizontal)
     }
-}
-
-#Preview {
-    FriendCell()
 }
