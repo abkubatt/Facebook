@@ -36,6 +36,9 @@
 		A5C5FF292BB1E11900AE66EA /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5FF282BB1E11900AE66EA /* Post.swift */; };
 		A5C5FF2B2BB1E17600AE66EA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5FF2A2BB1E17600AE66EA /* User.swift */; };
 		A5C5FF2E2BB1E48200AE66EA /* FriendsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5FF2D2BB1E48200AE66EA /* FriendsViewModel.swift */; };
+		A5C5FF322BB1EABE00AE66EA /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5FF312BB1EABE00AE66EA /* LoginView.swift */; };
+		A5C5FF342BB1EAFA00AE66EA /* LogInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5FF332BB1EAFA00AE66EA /* LogInViewModel.swift */; };
+		A5C5FF362BB1EB2300AE66EA /* CustomTextFieldViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C5FF352BB1EB2300AE66EA /* CustomTextFieldViewModifier.swift */; };
 		A5CE41ED2BB085C6000DED67 /* ProfileOptionsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CE41EC2BB085C6000DED67 /* ProfileOptionsView.swift */; };
 		A5CE41EF2BB08CED000DED67 /* ProfileFriendsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5CE41EE2BB08CED000DED67 /* ProfileFriendsView.swift */; };
 		A5F18E852BB0A5CC00A3138D /* ReelResuableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5F18E842BB0A5CC00A3138D /* ReelResuableView.swift */; };
@@ -81,6 +84,9 @@
 		A5C5FF282BB1E11900AE66EA /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
 		A5C5FF2A2BB1E17600AE66EA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		A5C5FF2D2BB1E48200AE66EA /* FriendsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendsViewModel.swift; sourceTree = "<group>"; };
+		A5C5FF312BB1EABE00AE66EA /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		A5C5FF332BB1EAFA00AE66EA /* LogInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LogInViewModel.swift; sourceTree = "<group>"; };
+		A5C5FF352BB1EB2300AE66EA /* CustomTextFieldViewModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextFieldViewModifier.swift; sourceTree = "<group>"; };
 		A5CE41EC2BB085C6000DED67 /* ProfileOptionsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileOptionsView.swift; sourceTree = "<group>"; };
 		A5CE41EE2BB08CED000DED67 /* ProfileFriendsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileFriendsView.swift; sourceTree = "<group>"; };
 		A5F18E842BB0A5CC00A3138D /* ReelResuableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReelResuableView.swift; sourceTree = "<group>"; };
@@ -283,6 +289,8 @@
 		A52239722BA1A1990021A67B /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				A5C5FF302BB1EAA900AE66EA /* ViewModel */,
+				A5C5FF2F2BB1EAA400AE66EA /* View */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -322,6 +330,7 @@
 			children = (
 				A5A89D772BB1743F00AA4972 /* CustomButtonModifier.swift */,
 				A5A89D7D2BB17B9800AA4972 /* VideoOptionViewModifier.swift */,
+				A5C5FF352BB1EB2300AE66EA /* CustomTextFieldViewModifier.swift */,
 			);
 			path = ViewModifiers;
 			sourceTree = "<group>";
@@ -347,6 +356,22 @@
 			isa = PBXGroup;
 			children = (
 				A5C5FF2D2BB1E48200AE66EA /* FriendsViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		A5C5FF2F2BB1EAA400AE66EA /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5FF312BB1EABE00AE66EA /* LoginView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A5C5FF302BB1EAA900AE66EA /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				A5C5FF332BB1EAFA00AE66EA /* LogInViewModel.swift */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -454,8 +479,10 @@
 				A5F18E922BB0C5B800A3138D /* FriendsView.swift in Sources */,
 				A5A89D7E2BB17B9800AA4972 /* VideoOptionViewModifier.swift in Sources */,
 				A5C24D892BA4CC1B007287B8 /* FeedHeaderView.swift in Sources */,
+				A5C5FF362BB1EB2300AE66EA /* CustomTextFieldViewModifier.swift in Sources */,
 				A5A89D6F2BB16AC500AA4972 /* MenuView.swift in Sources */,
 				A56781512BA9EFC5006EE173 /* DividerView.swift in Sources */,
+				A5C5FF322BB1EABE00AE66EA /* LoginView.swift in Sources */,
 				A5F18E852BB0A5CC00A3138D /* ReelResuableView.swift in Sources */,
 				A5A89D732BB16CD800AA4972 /* ShortCutsView.swift in Sources */,
 				A5A89D752BB1720C00AA4972 /* MenuCell.swift in Sources */,
@@ -476,6 +503,7 @@
 				A5C5FF2B2BB1E17600AE66EA /* User.swift in Sources */,
 				A567814C2BA9EDCA006EE173 /* StoryFeedView.swift in Sources */,
 				A5C411862BA9EC7200F88479 /* StoryCardView.swift in Sources */,
+				A5C5FF342BB1EAFA00AE66EA /* LogInViewModel.swift in Sources */,
 				A5A37C422BAC9C7400188A31 /* PostView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
