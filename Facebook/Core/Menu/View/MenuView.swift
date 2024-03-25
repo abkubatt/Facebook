@@ -8,6 +8,7 @@
 import SwiftUI
 
 struct MenuView: View {
+    @State private var showLogOutAlert = false
     var body: some View {
         NavigationView {
             GeometryReader { proxy in
@@ -15,7 +16,22 @@ struct MenuView: View {
                     VStack(alignment: .leading) {
                         MenuHeaderView()
                         ShortCutsView(width: proxy.size.width)
+                        MenuCell(title: "Help & Support", name: "questionmark.circle.fill")
+                        MenuCell(title: "Setting & Privacy", name: "gearshape.fill")
+                        MenuCell(title: "Also from Meta", name: "window.casement.closed")
+                        Button {
+                            showLogOutAlert.toggle()
+                        } label: {
+                            Text("Log Out")
+                                .customButtonModifier(width: proxy.size.width)
+                                .padding()
+                        }
                     }
+                }
+                .alert("Log out of your account?",
+                       isPresented: $showLogOutAlert) {
+                    Button("Logout") { }
+                    Button("Cancel", role: .cancel) { }
                 }
                 .background(Color(.systemGray6))
                 .scrollIndicators(.hidden)

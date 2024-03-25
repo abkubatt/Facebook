@@ -8,11 +8,30 @@
 import SwiftUI
 
 struct MenuCell: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+    private var title: String
+    private var name: String
+    
+    init(title: String, name: String) {
+        self.title = title
+        self.name = name
     }
-}
 
-#Preview {
-    MenuCell()
+    var body: some View {
+        VStack(alignment: .leading) {
+            Divider()
+            HStack(spacing: 15) {
+                Image(systemName: name)
+                    .resizable()
+                    .scaledToFill()
+                    .frame(width: 24, height: 24)
+                    .foregroundStyle(.gray)
+                Text(title)
+                Spacer()
+                Image(systemName: "chevron.down")
+            }
+            .padding(.horizontal)
+            .padding(.vertical, 7)
+            .font(.headline)
+        }
+    }
 }

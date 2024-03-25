@@ -22,6 +22,8 @@
 		A5A89D6F2BB16AC500AA4972 /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D6E2BB16AC500AA4972 /* MenuView.swift */; };
 		A5A89D712BB16BBC00AA4972 /* MenuHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D702BB16BBC00AA4972 /* MenuHeaderView.swift */; };
 		A5A89D732BB16CD800AA4972 /* ShortCutsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D722BB16CD800AA4972 /* ShortCutsView.swift */; };
+		A5A89D752BB1720C00AA4972 /* MenuCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D742BB1720C00AA4972 /* MenuCell.swift */; };
+		A5A89D782BB1743F00AA4972 /* CustomButtonModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5A89D772BB1743F00AA4972 /* CustomButtonModifier.swift */; };
 		A5C24D872BA4CBE7007287B8 /* FeedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D862BA4CBE7007287B8 /* FeedView.swift */; };
 		A5C24D892BA4CC1B007287B8 /* FeedHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D882BA4CC1B007287B8 /* FeedHeaderView.swift */; };
 		A5C24D8B2BA4CC37007287B8 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5C24D8A2BA4CC37007287B8 /* ProfileView.swift */; };
@@ -56,6 +58,8 @@
 		A5A89D6E2BB16AC500AA4972 /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
 		A5A89D702BB16BBC00AA4972 /* MenuHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeaderView.swift; sourceTree = "<group>"; };
 		A5A89D722BB16CD800AA4972 /* ShortCutsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShortCutsView.swift; sourceTree = "<group>"; };
+		A5A89D742BB1720C00AA4972 /* MenuCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuCell.swift; sourceTree = "<group>"; };
+		A5A89D772BB1743F00AA4972 /* CustomButtonModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomButtonModifier.swift; sourceTree = "<group>"; };
 		A5C24D862BA4CBE7007287B8 /* FeedView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedView.swift; sourceTree = "<group>"; };
 		A5C24D882BA4CC1B007287B8 /* FeedHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedHeaderView.swift; sourceTree = "<group>"; };
 		A5C24D8A2BA4CC37007287B8 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
@@ -246,6 +250,7 @@
 		A52239712BA1A1980021A67B /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				A5A89D762BB1742C00AA4972 /* ViewModifiers */,
 				A567814F2BA9EFB3006EE173 /* Views */,
 			);
 			path = Components;
@@ -283,8 +288,17 @@
 				A5A89D6E2BB16AC500AA4972 /* MenuView.swift */,
 				A5A89D702BB16BBC00AA4972 /* MenuHeaderView.swift */,
 				A5A89D722BB16CD800AA4972 /* ShortCutsView.swift */,
+				A5A89D742BB1720C00AA4972 /* MenuCell.swift */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A5A89D762BB1742C00AA4972 /* ViewModifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A5A89D772BB1743F00AA4972 /* CustomButtonModifier.swift */,
+			);
+			path = ViewModifiers;
 			sourceTree = "<group>";
 		};
 		A5F18E8C2BB0C45100A3138D /* View */ = {
@@ -390,10 +404,12 @@
 				A56781512BA9EFC5006EE173 /* DividerView.swift in Sources */,
 				A5F18E852BB0A5CC00A3138D /* ReelResuableView.swift in Sources */,
 				A5A89D732BB16CD800AA4972 /* ShortCutsView.swift in Sources */,
+				A5A89D752BB1720C00AA4972 /* MenuCell.swift in Sources */,
 				A567814E2BA9EE72006EE173 /* MyStoryCardView.swift in Sources */,
 				A5F18E952BB0CDEA00A3138D /* MarketPlaceView.swift in Sources */,
 				A5F18E8E2BB0C47900A3138D /* TagView.swift in Sources */,
 				A5F18E972BB0CE3C00A3138D /* MarketPlaceButton.swift in Sources */,
+				A5A89D782BB1743F00AA4972 /* CustomButtonModifier.swift in Sources */,
 				A5C24D8B2BA4CC37007287B8 /* ProfileView.swift in Sources */,
 				A5CE41EF2BB08CED000DED67 /* ProfileFriendsView.swift in Sources */,
 				A503C10A2BAF38C3001D8F5F /* ProfileHeaderView.swift in Sources */,
